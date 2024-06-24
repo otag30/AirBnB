@@ -79,11 +79,17 @@ button {
     padding: 0 16px;
 }
 
+.header_search_textbox {
+    display: inline-block;
+    padding-left: 2px;
+}
+
 .header_search_textmain {
     color: var(--txt-second);
     font-size: var(--fontSize-M);
     font-weight: var(--fontWeight-M);
     line-height: var(--fontLine-M);
+    display: block;
 }
 
 .header_search_textsecond {

@@ -90,7 +90,7 @@ button {
     font-weight: var(--fontWeight-M);
     line-height: var(--fontLine-M);
     display: block;
-    text-align: left;
+    text-align: left
 }
 
 .header_search_textsecond {

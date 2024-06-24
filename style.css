@@ -90,11 +90,7 @@ button {
     font-weight: var(--fontWeight-M);
     line-height: var(--fontLine-M);
     display: block;
-<<<<<<< HEAD
-    text-align: left;
-=======
     text-align: left
->>>>>>> feature/headerNavMenu
 }
 
 .header_search_textsecond {
@@ -102,11 +98,7 @@ button {
     font-size: var(--fontSize-S);
     font-weight: var(--fontWeight-S);
     line-height: var(--fontLine-S);
-<<<<<<< HEAD
-    text-align: left;
-=======
     text-align: left
->>>>>>> feature/headerNavMenu
 }
 
 .header_search_icon {
@@ -149,8 +141,6 @@ button {
         width: 16px;
     }
 }
-<<<<<<< HEAD
-=======
 /* Navigation Menu */
 /* Navigation Header Menu */
 #headerNavMenu {
@@ -201,4 +191,3 @@ button {
         font-size: 12px; /* Adjust font size for smaller screens */
     }
 }
->>>>>>> feature/headerNavMenu

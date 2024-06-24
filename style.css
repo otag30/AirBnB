@@ -90,7 +90,11 @@ button {
     font-weight: var(--fontWeight-M);
     line-height: var(--fontLine-M);
     display: block;
+<<<<<<< HEAD
     text-align: left;
+=======
+    text-align: left
+>>>>>>> feature/headerNavMenu
 }
 
 .header_search_textsecond {
@@ -98,7 +102,11 @@ button {
     font-size: var(--fontSize-S);
     font-weight: var(--fontWeight-S);
     line-height: var(--fontLine-S);
+<<<<<<< HEAD
     text-align: left;
+=======
+    text-align: left
+>>>>>>> feature/headerNavMenu
 }
 
 .header_search_icon {
@@ -141,3 +149,56 @@ button {
         width: 16px;
     }
 }
+<<<<<<< HEAD
+=======
+/* Navigation Menu */
+/* Navigation Header Menu */
+#headerNavMenu {
+    position: relative;
+    box-shadow: 0px 2px 0px 0px rgba(207, 207, 207, 0.459);
+    height: 55px;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+#SymbolsAndTitles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.menuItem .symbol {
+    display: flex;
+    padding: 2px 31.5px;
+    height: 24px;
+    margin-bottom: 1px;
+    opacity: 0.7;
+}
+
+.menuItem .symboltext {
+    padding: 0px;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 414px) {
+    #headerNavMenu {
+        padding: 10px 20px;
+    }
+
+    .menuItem .symbol {
+        padding: 2px 20px; /* Adjust padding for smaller screens */
+        height: 20px; /* Adjust height for smaller screens */
+    }
+
+    .menuItem .symboltext {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+>>>>>>> feature/headerNavMenu

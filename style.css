@@ -191,3 +191,74 @@ button {
         font-size: 12px; /* Adjust font size for smaller screens */
     }
 }
+
+/* Hero Section */
+
+#Products {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding: 0px;
+}
+
+#MuseeOrsay, #InsideOut, #PrincePurpleRain, #KevinHart, #Doja, #Incredibles, #CrashAtXMansion, #JanhviKapoor, #TrainAtXMansion, #TourWithFeid, #GameWithKhabyLame, #UpHouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.ImageContainerWrapper {
+    width: 364px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ImageContainer {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Photos {
+    min-width: 364px;
+    height: 345.7px;
+    width: 364px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    margin-bottom: 10px; /* Space between the photo and text */
+}
+
+.PhotoTexts {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px; /* Increased space between the text and the following image */
+}
+
+.PhotoTexts span {
+    font-size: 16px;
+    color: #484848;
+}
+
+.PhotoTexts .location,
+.PhotoTexts .dates {
+    font-weight: bold;
+    color: black;
+}
+
+.PhotoTexts .hostType {
+    font-weight: normal;
+}

@@ -1,0 +1,415 @@
+/* Variables */
+:root {
+    /* Color Variables */
+    --bg-main: #fff;
+    --txt-main: #000;
+    --txt-second: #222;
+    --txt-third: #6a6a6a;
+    --lineBrk: #ddd;
+
+    /* Size Variables */
+    --fontSize-S: 0.75rem;
+    --fontSize-M: 0.875rem;
+    --fontLine-S: 1rem;
+    --fontLine-M: 1.25rem;
+    --fontWeight-S: 400;
+    --fontWeight-M: 600;
+}
+
+/* General Home Page Settings */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--fontSize-M);
+    line-height: var(--fontLine-M);
+    max-width: 100%; /* Ensure it uses full width on mobile */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    gap: 5px;
+}
+
+/* Navigation Bar */
+.header {
+    padding: 14px 24px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: var(--bg-main);
+}
+
+/* Navigation Search Box */
+.header_search {
+    margin: 0 auto;
+    max-width: 100%; /* Ensure it uses full width on mobile */
+}
+
+.header_search_button {
+    border-radius: 1000px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #f2f2f2;
+    height: 56px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.header_search_textbox {
+    display: inline-block;
+    padding-left: 18px;
+}
+
+.header_search_textmain {
+    color: var(--txt-second);
+    font-size: var(--fontSize-M);
+    font-weight: var(--fontWeight-M);
+    line-height: var(--fontLine-M);
+    display: block;
+    text-align: left
+}
+
+.header_search_textsecond {
+    color: var(--txt-third);
+    font-size: var(--fontSize-S);
+    font-weight: var(--fontWeight-S);
+    line-height: var(--fontLine-S);
+    text-align: left
+}
+
+.header_search_icon {
+    height: 20px;
+    width: 20px;
+    color: var(--txt-second);
+}
+
+/* Custom font class for Nunito Sans with variable styles */
+.nunito-sans-custom {
+    font-family: 'Nunito Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Default weight */
+    font-style: normal;
+    font-variation-settings:
+        "opsz" 12, /* Optical size */
+        "wght" 400; /* Weight */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 414px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header_search_button {
+        padding: 0 12px;
+    }
+
+    .header_search_textmain {
+        font-size: var(--fontSize-S);
+    }
+
+    .header_search_textsecond {
+        font-size: var(--fontSize-S);
+    }
+
+    .header_search_icon {
+        height: 16px;
+        width: 16px;
+    }
+}
+/* Navigation Menu */
+/* Navigation Header Menu */
+#headerNavMenu {
+    position: relative;
+    box-shadow: 0px 2px 0px 0px rgba(207, 207, 207, 0.459);
+    height: 55px;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+#SymbolsAndTitles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.menuItem .symbol {
+    display: flex;
+    padding: 2px 31.5px;
+    height: 24px;
+    margin-bottom: 1px;
+    opacity: 0.7;
+}
+
+.menuItem .symboltext {
+    padding: 0px;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 414px) {
+    #headerNavMenu {
+        padding: 10px 20px;
+    }
+
+    .menuItem .symbol {
+        padding: 2px 20px; /* Adjust padding for smaller screens */
+        height: 20px; /* Adjust height for smaller screens */
+    }
+
+    .menuItem .symboltext {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Hero Section */
+
+#Products {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding: 0px;
+}
+
+#MuseeOrsay, #InsideOut, #PrincePurpleRain, #KevinHart, #Doja, #Incredibles, #CrashAtXMansion, #JanhviKapoor, #TrainAtXMansion, #TourWithFeid, #GameWithKhabyLame, #UpHouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.ImageContainerWrapper {
+    width: 364px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ImageContainer {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Photos {
+    min-width: 364px;
+    height: 345.7px;
+    width: 364px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    margin-bottom: 10px; /* Space between the photo and text */
+}
+
+.PhotoTexts {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px; /* Increased space between the text and the following image */
+}
+
+.PhotoTexts span {
+    font-size: 16px;
+    color: #484848;
+}
+
+.PhotoTexts .location,
+.PhotoTexts .dates {
+    font-weight: bold;
+    color: black;
+}
+
+.PhotoTexts .hostType {
+    font-weight: normal;
+}
+
+/* Past Experiences Section */
+#PastExperiences {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding: 5px; /* Add padding to create space around the content */
+}
+
+#PastExperiences h2 {
+    font-size: 27px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    margin-bottom: 20px; /* Add margin below the header */
+}
+
+#PastExperiences > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between each experience section */
+    position: relative;
+}
+
+.ImageContainerWrapper {
+    width: 364px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ImageContainer {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Photos {
+    min-width: 364px;
+    height: 345.7px;
+    width: 364px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    margin-bottom: 10px; /* Space between the photo and text */
+}
+
+.PhotoTexts {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px; /* Increased space between the text and the following image */
+}
+
+.PhotoTexts span {
+    font-size: 16px;
+    color: #484848;
+}
+
+.PhotoTexts .location,
+.PhotoTexts .dates {
+    font-weight: bold;
+    color: black;
+}
+
+.PhotoTexts .hostType {
+    font-weight: normal;
+}
+
+/* Future Getaways Section */
+
+.footer {
+    background-color: #e0e0e0; /* Slightly darker gray */
+    padding: 24px 16px;
+}
+
+.footer_header {
+    margin-bottom: 24px;
+}
+
+.footer_header_title {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.footer_header_category {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.footer_header_category_buttons {
+    display: flex;
+}
+
+.footer_header_category_button {
+    background-color: transparent;
+    color: #6a6a6a; /* Light gray for non-active buttons */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 1rem; /* 16px */
+}
+
+.footer_header_category_button.active {
+    color: #6a6a6a; /* Make sure active button is the same color */
+    font-weight: normal;
+}
+
+.line_break {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.arrow_end {
+    margin-top: 8px;
+    align-self: flex-end;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive design for iPhone 11 */
+@media only screen and (max-width: 414px) {
+    .footer {
+        padding: 16px 8px;
+    }
+
+    .footer_header_title {
+        font-size: 1.25rem; /* Adjust for smaller screens */
+    }
+
+    .footer_header_category_button {
+        padding: 8px 12px;
+        font-size: 0.875rem; /* Adjust button text size */
+    }
+}

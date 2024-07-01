@@ -1,36 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Airbnb Clone Mobile Homepage</title>
-    </head>
-        <body>
-    <header>
-        <div class="header-search-bar">
-            <img src="search-bar.png" alt="header-search-bar">
+    <title>Airbnb | Holiday rentals, cabins, beach houses & more</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&variable=wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <header class="header">
+        <!-- Navigation Search Box -->
+        <div class="header_search">
+            <button class="header_search_button">
+                <!-- Navigation Search Box Icon -->
+                <span class="header_search_iconbox grid">
+                    <svg viewBox="0 0 32 32" class="header_search_icon">
+                        <path d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"></path>
+                    </svg>
+                </span>
+                <!-- Navigation Search Box Text -->
+                <span class="header_search_textbox">
+                    <div class="header_search_textmain">Where to?</div>
+                    <div class="header_search_textsecond flex">
+                        <span class="subtitle">Anywhere</span>
+                        <span>•</span>
+                        <span class="subtitle">Any week</span>
+                        <span>•</span>
+                        <span class="subtitle">Add guests</span>
+                    </div>
+                </span>
+            </button>
         </div>
-        <div class="header-nav-menu">
-            <img src="nav-menu-icon.png" alt="header-nav-menu">
+        <!-- Navigation Menu Section -->
+    <div id="headerNavMenu">
+        <div id="SymbolsAndTitles">
+            <div class="menuItem" id="Icons">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.1-Icons.png" alt="Icons">
+                <span class="symboltext">Icons</span>
+            </div>
+            <div class="menuItem" id="Beachfront">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.2-Beachfront.jpg" alt="Beachfront">
+                <span class="symboltext">Beachfront</span>
+            </div>
+            <div class="menuItem" id="Cabins">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.3-Cabins.jpg" alt="Cabins">
+                <span class="symboltext">Cabins</span>
+            </div>
+            <div class="menuItem" id="AmazingPools">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.4-Amazing pools.jpg" alt="Amazing pools">
+                <span class="symboltext">Amazing pools</span>
+            </div>
+            <div class="menuItem" id="Design">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.5-Design.jpg" alt="Design">
+                <span class="symboltext">Design</span>
+            </div>
+            <div class="menuItem" id="BedBreakfast">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.6-Bed & breakfast.jpg" alt="Bed & breakfast">
+                <span class="symboltext">Bed & breakfast</span>
+            </div>
+            <div class="menuItem" id="OMG">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.7-OMG.jpg" alt="OMG">
+                <span class="symboltext">OMG</span>
+            </div>
+            <div class="menuItem" id="NationalParks">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.8-National parks.jpg" alt="National parks">
+                <span class="symboltext">National parks</span>
+            </div>
+            <div class="menuItem" id="AmazingViews">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.9-Amazing views.jpg" alt="Amazing views">
+                <span class="symboltext">Amazing views</span>
+            </div>
+            <div class="menuItem" id="Farms">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.10-Farms.jpg" alt="Farms">
+                <span class="symboltext">Farms</span>
+            </div>
+            <div class="menuItem" id="Countryside">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.11-Countryside.jpg" alt="Countryside">
+                <span class="symboltext">Countryside</span>
+            </div>
+            <div class="menuItem" id="Castles">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.12-Castles.jpg" alt="Castles">
+                <span class="symboltext">Castles</span>
+            </div>
+            <div class="menuItem" id="OffTheGrid">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.13-Off-the-grid.jpg" alt="Off-the-grid">
+                <span class="symboltext">Off-the-grid</span>
+            </div>
+            <div class="menuItem" id="Vineyards">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.14-Vineyards.jpg" alt="Vineyards">
+                <span class="symboltext">Vineyards</span>
+            </div>
+            <div class="menuItem" id="Treehouses">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.15-Treehouses.jpg" alt="Treehouses">
+                <span class="symboltext">Treehouses</span>
+            </div>
+            <div class="menuItem" id="Lakefront">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.16-Lakefront.jpg" alt="Lakefront">
+                <span class="symboltext">Lakefront</span>
+            </div>
+            <div class="menuItem" id="Camping">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.17-Camping.jpg" alt="Camping">
+                <span class="symboltext">Camping</span>
+            </div>
+            <div class="menuItem" id="Mansions">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.18-Mansions.jpg" alt="Mansions">
+                <span class="symboltext">Mansions</span>
+            </div>
+            <div class="menuItem" id="TinyHomes">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.19-Tiny homes.jpg" alt="Tiny homes">
+                <span class="symboltext">Tiny homes</span>
+            </div>
+            <div class="menuItem" id="Trending">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.20-Trending.jpg" alt="Trending">
+                <span class="symboltext">Trending</span>
+            </div>
+            <div class="menuItem" id="Tropical">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.21-Tropical.jpg" alt="Tropical">
+                <span class="symboltext">Tropical</span>
+            </div>
+            <div class="menuItem" id="Boats">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.22-Boats.jpg" alt="Boats">
+                <span class="symboltext">Boats</span>
+            </div>
+            <div class="menuItem" id="Lake">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.23-Lake.jpg" alt="Lake">
+                <span class="symboltext">Lake</span>
+            </div>
+            <div class="menuItem" id="ShepherdsHuts">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.24-Shepherds huts.jpg" alt="Shepherds huts">
+                <span class="symboltext">Shepherds huts</span>
+            </div>
+            <div class="menuItem" id="Luxe">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.25-Luxe.jpg" alt="Luxe">
+                <span class="symboltext">Luxe</span>
+            </div>
+            <div class="menuItem" id="Islands">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.26-Islands.jpg" alt="Islands">
+                <span class="symboltext">Islands</span>
+            </div>
+            <div class="menuItem" id="Play">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.27-Play.jpg" alt="Play">
+                <span class="symboltext">Play</span>
+            </div>
+            <div class="menuItem" id="HistoricalHomes">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.28-Historical Homes.jpg" alt="Historical Homes">
+                <span class="symboltext">Historical Homes</span>
+            </div>
+            <div class="menuItem" id="TopCities">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.29-Top cities.jpg" alt="Top cities">
+                <span class="symboltext">Top cities</span>
+            </div>
+            <div class="menuItem" id="Houseboats">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.30-Houseboats.jpg" alt="Houseboats">
+                <span class="symboltext">Houseboats</span>
+            </div>
+            <div class="menuItem" id="SkiInOut">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.31-Ski-in-out.jpg" alt="Ski-in-out">
+                <span class="symboltext">Ski-in-out</span>
+            </div>
+            <div class="menuItem" id="Containers">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.32-Containers.jpg" alt="Containers">
+                <span class="symboltext">Containers</span>
+            </div>
+            <div class="menuItem" id="Yurts">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.33-Yurts.jpg" alt="Yurts">
+                <span class="symboltext">Yurts</span>
+            </div>
+            <div class="menuItem" id="Barns">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.34-Barns.jpg" alt="Barns">
+                <span class="symboltext">Barns</span>
+            </div>
+            <div class="menuItem" id="Rooms">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.35-Rooms.jpg" alt="Rooms">
+                <span class="symboltext">Rooms</span>
+            </div>
+            <div class="menuItem" id="EarthHomes">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.36-Earth homes.jpg" alt="Earth homes">
+                <span class="symboltext">Earth homes</span>
+            </div>
+            <div class="menuItem" id="New">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.37-New.jpg" alt="New">
+                <span class="symboltext">New</span>
+            </div>
+            <div class="menuItem" id="Caves">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.38-Caves.jpg" alt="Caves">
+                <span class="symboltext">Caves</span>
+            </div>
+            <div class="menuItem" id="TopOfTheWorld">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.39-Top of the world.jpg" alt="Top of the world">
+                <span class="symboltext">Top of the world</span>
+            </div>
+            <div class="menuItem" id="Adapted">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.40-Adapted.jpg" alt="Adapted">
+                <span class="symboltext">Adapted</span>
+            </div>
+            <div class="menuItem" id="GrandPianos">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.41-Grand pianos.jpg" alt="Grand pianos">
+                <span class="symboltext">Grand pianos</span>
+            </div>
+            <div class="menuItem" id="Towers">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.42-Towers.jpg" alt="Towers">
+                <span class="symboltext">Towers</span>
+            </div>
+            <div class="menuItem" id="Domes">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.43-Domes.jpg" alt="Domes">
+                <span class="symboltext">Domes</span>
+            </div>
+            <div class="menuItem" id="AFrames">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.44-A-Frames.jpg" alt="A-Frames">
+                <span class="symboltext">A-Frames</span>
+            </div>
+            <div class="menuItem" id="Surfing">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.45-Surfing.jpg" alt="Surfing">
+                <span class="symboltext">Surfing</span>
+            </div>
+            <div class="menuItem" id="ChefsKitchens">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.46-Chefs kitchens.jpg" alt="Chefs kitchens">
+                <span class="symboltext">Chefs kitchens</span>
+            </div>
+            <div class="menuItem" id="Riads">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.47-Riads.jpg" alt="Riads">
+                <span class="symboltext">Riads</span>
+            </div>
+            <div class="menuItem" id="Arctic">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.48-Arctic.jpg" alt="Arctic">
+                <span class="symboltext">Arctic</span>
+            </div>
+            <div class="menuItem" id="CreativeSpaces">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.49-Creative spaces.jpg" alt="Creative spaces">
+                <span class="symboltext">Creative spaces</span>
+            </div>
+            <div class="menuItem" id="Windmills">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.50-Windmills.jpg" alt="Windmills">
+                <span class="symboltext">Windmills</span>
+            </div>
+            <div class="menuItem" id="CycladicHomes">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.51-Cycladic homes.jpg" alt="Cycladic homes">
+                <span class="symboltext">Cycladic homes</span>
+            </div>
+            <div class="menuItem" id="Golfing">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.52-Golfing.jpg" alt="Golfing">
+                <span class="symboltext">Golfing</span>
+            </div>
+            <div class="menuItem" id="Skiing">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.53-Skiing.jpg" alt="Skiing">
+                <span class="symboltext">Skiing</span>
+            </div>
+            <div class="menuItem" id="Trulli">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.54-Trulli.jpg" alt="Trulli">
+                <span class="symboltext">Trulli</span>
+            </div>
+            <div class="menuItem" id="Dammusi">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.55-Dammusi.jpg" alt="Dammusi">
+                <span class="symboltext">Dammusi</span>
+            </div>
+            <div class="menuItem" id="Ryokans">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.56-Ryokans.jpg" alt="Ryokans">
+                <span class="symboltext">Ryokans</span>
+            </div>
+            <div class="menuItem" id="Hanoks">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.57-Hanoks.jpg" alt="Hanoks">
+                <span class="symboltext">Hanoks</span>
+            </div>
+            <div class="menuItem" id="CasasParticulares">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.58-Casas particulares.jpg" alt="Casas particulares">
+                <span class="symboltext">Casas particulares</span>
+            </div>
+            <div class="menuItem" id="Desert">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.59-Desert.jpg" alt="Desert">
+                <span class="symboltext">Desert</span>
+            </div>
+            <div class="menuItem" id="CamperVans">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.60-Camper vans.jpg" alt="Camper vans">
+                <span class="symboltext">Camper vans</span>
+            </div>
+            <div class="menuItem" id="Minsus">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.61-Minsus.jpg" alt="Minsus">
+                <span class="symboltext">Minsus</span>
+            </div>
+            <div class="menuItem" id="Beach">
+                <img class="symbol" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/2.62-Beach.jpg" alt="Beach">
+                <span class="symboltext">Beach</span>
+            </div>
         </div>
+    </div>
     </header>
-    <!-- Add more sections here -->
 
-    <!-- Bottom Navigation Bar -->
-<nav class="bottom-nav">
-    <a href="#" class="nav-item">
-        <img src="explore-icon.png" alt="Explore">
-        <span class="nav-label active">Explore</span>
-    </a>
-    <a href="#" class="nav-item">
-        <img src="wishlist-icon.png" alt="Wishlists">
-        <span class="nav-label">Wishlists</span>
-    </a>
-    <a href="#" class="nav-item">
-        <img src="login-icon.png" alt="Log In">
-        <span class="nav-label">Log In</span>
-    </a>
-</nav>
-        </body>
+    <!-- Hero Section -->
+    <div id="Products">
+
+        <div id="MuseeOrsay">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.1-Musee dOrsay.webp" alt="Musee d'Orsay">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Wake up in the Musée d'Orsay</span>
+                <span class="hostType">Hosted by Mathieu Lethanneur</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="InsideOut">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.2-Inside Out2.png" alt="Inside Out2">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Make core memories with Inside Out 2</span>
+                <span class="hostType">Hosted by Joy</span>
+                <span class="dates">Coming June</span>
+            </div>
+        </div>
+    
+        <div id="PrincePurpleRain">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.3-Prince Purple Rain house.png" alt="Prince Purple Rain house">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Stay in Prince's Purple Rain house</span>
+                <span class="hostType">Hosted by Wendy and Lisa</span>
+                <span class="dates">Coming August</span>
+            </div>
+        </div>
+    
+        <div id="KevinHart">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.4-Kevin Hart.webp" alt="Kevin Hart">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">LGo VIP with Kevin Hart</span>
+                <span class="hostType">Hosted by Kevin Hart</span>
+                <span class="dates">Coming August</span>
+            </div>
+        </div>
+    
+        <div id="Doja">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.5-Doja.webp" alt="Doja">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Join a living room session with Doja</span>
+                <span class="hostType">Hosted by Doja Cat</span>
+                <span class="dates">Coming October</span>
+            </div>
+        </div>
+    
+        <div id="Incredibles">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.6-Incredibles supersuit.jpeg" alt="Incredibles supersuit">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Design your Incredibles Supersuit</span>
+                <span class="hostType">Hosted by Edna Mode</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="CrashAtXMansion">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.7-Crash at the X-Mansion.webp" alt="Crash at the X-Mansion">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Crash at the X-Mansion</span>
+                <span class="hostType">Hosted by Jubilee</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="JanhviKapoor">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.8-Janhvi Kapoor.webp" alt="Janhvi Kapoor">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Live like Bollywood star Janhvi Kapoor</span>
+                <span class="hostType">Hosted by Janhvi Kapoor</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="TrainAtXMansion">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.9-Train at the X-Mansion.jpeg" alt="Train at the X-Mansion">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Train at the X-Mansion</span>
+                <span class="hostType">Hosted by Jubilee</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="TourWithFeid">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.10-Go out in Tour with Feid.webp" alt="Go out in Tour with Feid">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Go on tour with Feid</span>
+                <span class="hostType">Hosted by Feid</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="GameWithKhabyLame">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.11-Game with Khaby Lame.webp" alt="Game with Khaby Lame">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Game with Khaby Lame</span>
+                <span class="hostType">Hosted by Khaby Lame</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+        <div id="UpHouse">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/3.12-Up house.webp" alt="Up house">
+                </div>
+            </div>
+            <div class="PhotoTexts">
+                <span class="location">Drift off in the Up house</span>
+                <span class="hostType">Hosted by Carl Fredricksen</span>
+                <span class="dates">Sold out</span>
+            </div>
+        </div>
+    
+    </div>
+ 
+     <!-- Past Experiences Section -->
+     
+     <div id="PastExperiences">
+        <h2>Past Experiences</h2>
+    
+        <div id="FerrariMuseum">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.1-Ferrari Museum.jpeg" alt="Ferrari Museum">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">Spend the night in the Ferrari Museum</span>
+                    <span class="hostType">Hosted by Marc Gené</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="ShrekSwamp">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.2-Shrek Swamp.webp" alt="Shrek Swamp">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">Shrek's Swamp</span>
+                    <span class="hostType">Hosted by Donkey</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="BarbieHouse">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.3-Barbie House.webp" alt="Barbie House">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">Barbie's Malibu DreamHouse, Ken's Way</span>
+                    <span class="hostType">Hosted by Ken</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="TedLassoPub">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.4-Ted Lasso Pub.webp" alt="Ted Lasso Pub">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">Ted Lasso's Favorite Pub</span>
+                    <span class="hostType">Hosted by Mae</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="HouseplantRetreat">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.5-Houseplant Retreat.webp" alt="Houseplant Retreat">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">Houseplant Retreat</span>
+                    <span class="hostType">Hosted by Seth Rogen</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="HomeAloneHoliday">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.6-Home Alone Holiday.jpeg" alt="Home Alone Holiday">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">Home Alone Holiday</span>
+                    <span class="hostType">Hosted by Buzz</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="Blockbuster">
+            <div class="ImageContainerWrapper">
+                <div class="ImageContainer">
+                    <img class="Photos" src="/Users/cvieira/Documents/SOC/Projects/AirBnB/images/4.7-Blockbuster.webp" alt="Blockbuster">
+                </div>
+                <div class="PhotoTexts">
+                    <span class="location">The last Blockbuster</span>
+                    <span class="hostType">Hosted by Sandi</span>
+                    <span class="dates">Sold out</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+  
+<!-- Future Getaways Section -->
+<main class="footer">
+    <!-- Footer Header -->
+    <section class="footer_header">
+        <h2 class="footer_header_title">Inspiration for future getaways</h2>
+        <!-- Footer Header Category Bar -->
+        <div class="footer_header_category">
+            <div class="footer_header_category_buttons flex">
+                <button type="button" class="footer_header_category_button text">&lt; Popular</button>
+                <button type="button" class="footer_header_category_button text">Historic</button>
+                <button type="button" class="footer_header_category_button text">Coastal</button>
+                <button type="button" class="footer_header_category_button text">Islands</button>
+                <button type="button" class="footer_header_category_button text">Lakes</button>
+                <button type="button" class="footer_header_category_button text">Unique stays</button>
+                <button type="button" class="footer_header_category_button text">Categories</button>
+                <button type="button" class="footer_header_category_button text">Things to do&gt;</button>
+            </div>
+        </div>
+        <!-- Footer Line Break -->
+        <div class="line_break"></div>
+        <button type="button" class="footer_header_category_button arrow_end flex">
+            <svg viewBox="0 0 32 32" aria-label="scroll tabs forward" role="img" focusable="false">
+                <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
+            </svg>
+        </button>
+    </section>
+</main>
+</body>
 </html>

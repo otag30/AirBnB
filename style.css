@@ -338,3 +338,78 @@ button {
 .PhotoTexts .hostType {
     font-weight: normal;
 }
+
+/* Future Getaways Section */
+
+.footer {
+    background-color: #e0e0e0; /* Slightly darker gray */
+    padding: 24px 16px;
+}
+
+.footer_header {
+    margin-bottom: 24px;
+}
+
+.footer_header_title {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.footer_header_category {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.footer_header_category_buttons {
+    display: flex;
+}
+
+.footer_header_category_button {
+    background-color: transparent;
+    color: #6a6a6a; /* Light gray for non-active buttons */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 1rem; /* 16px */
+}
+
+.footer_header_category_button.active {
+    color: #6a6a6a; /* Make sure active button is the same color */
+    font-weight: normal;
+}
+
+.line_break {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.arrow_end {
+    margin-top: 8px;
+    align-self: flex-end;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive design for iPhone 11 */
+@media only screen and (max-width: 414px) {
+    .footer {
+        padding: 16px 8px;
+    }
+
+    .footer_header_title {
+        font-size: 1.25rem; /* Adjust for smaller screens */
+    }
+
+    .footer_header_category_button {
+        padding: 8px 12px;
+        font-size: 0.875rem; /* Adjust button text size */
+    }
+}
